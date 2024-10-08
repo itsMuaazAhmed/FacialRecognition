@@ -45,6 +45,7 @@ extension ViewController : AVCaptureVideoDataOutputSampleBufferDelegate {
     }
 
     func handleFaceDetectionResults(_ observedFaces: [VNFaceObservation]?) {
+       
         guard let faces = observedFaces else { return }
         
         // Clear previous face layers
